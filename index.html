@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariya Nenot R | IoT Engineer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo"><span class="logo-badge">MN</span> Mariya Nenot R</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn-nav-cta">Let's Connect</a>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-visual">
+      <svg class="iot-diagram" viewBox="0 0 320 320" role="img" aria-label="Diagram of a connected IoT device linked to cloud, sensor, wireless, firmware, security, and power nodes at varying distances">
+        <path id="link-cloud" class="link dash-1" d="M160,160 L148,40"></path>
+        <path id="link-wifi" class="link dash-2" d="M160,160 L224,83"></path>
+        <path id="link-sensor" class="link dash-4" d="M160,160 L233,221"></path>
+        <path id="link-firmware" class="link dash-5" d="M160,160 L149,290"></path>
+        <path id="link-security" class="link dash-7" d="M160,160 L31,171"></path>
+        <path id="link-battery" class="link dash-8" d="M160,160 L72,86"></path>
+
+        <circle class="pulse pulse-cloud" r="4">
+          <animateMotion dur="3.2s" repeatCount="indefinite" begin="0s"><mpath href="#link-cloud"></mpath></animateMotion>
+        </circle>
+        <circle class="pulse pulse-wifi" r="3.5">
+          <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.3s"><mpath href="#link-wifi"></mpath></animateMotion>
+        </circle>
+        <circle class="pulse pulse-sensor" r="4.5">
+          <animateMotion dur="2s" repeatCount="indefinite" begin="0.9s"><mpath href="#link-sensor"></mpath></animateMotion>
+        </circle>
+        <circle class="pulse pulse-firmware" r="4">
+          <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.2s"><mpath href="#link-firmware"></mpath></animateMotion>
+        </circle>
+        <circle class="pulse pulse-security" r="3.5">
+          <animateMotion dur="2.6s" repeatCount="indefinite" begin="1.8s"><mpath href="#link-security"></mpath></animateMotion>
+        </circle>
+        <circle class="pulse pulse-battery" r="4.5">
+          <animateMotion dur="2.8s" repeatCount="indefinite" begin="2.1s"><mpath href="#link-battery"></mpath></animateMotion>
+        </circle>
+
+        <g class="node node-cloud" transform="translate(148,40)">
+          <g class="node-inner">
+            <circle r="26"></circle>
+            <g transform="scale(0.93) translate(-12,-12)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </g>
+          </g>
+        </g>
+
+        <g class="node node-wifi" transform="translate(224,83)">
+          <g class="node-inner">
+            <circle r="20"></circle>
+            <g transform="scale(0.71) translate(-12,-12)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+              <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </g>
+          </g>
+        </g>
+
+        <g class="node node-sensor" transform="translate(233,221)">
+          <g class="node-inner">
+            <circle r="32"></circle>
+            <g transform="scale(1.14) translate(-12,-12)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </g>
+          </g>
+        </g>
+
+        <g class="node node-firmware" transform="translate(149,290)">
+          <g class="node-inner">
+            <circle r="24"></circle>
+            <g transform="scale(0.86) translate(-12,-12)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </g>
+          </g>
+        </g>
+
+        <g class="node node-security" transform="translate(31,171)">
+          <g class="node-inner">
+            <circle r="20"></circle>
+            <g transform="scale(0.71) translate(-12,-12)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </g>
+          </g>
+        </g>
+
+        <g class="node node-battery" transform="translate(72,86)">
+          <g class="node-inner">
+            <circle r="28"></circle>
+            <g transform="scale(1) translate(-12,-12)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </g>
+          </g>
+        </g>
+
+        <g class="node node-hub" transform="translate(160,160)">
+          <g class="node-inner">
+            <circle r="38"></circle>
+            <g transform="scale(1.35) translate(-12,-12)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">IoT Engineer</p>
+      <h1>Engineering <span class="accent">Embedded Systems</span> for the Connected World</h1>
+      <p class="hero-tagline">
+        I design and build presence-sensing IoT products, combining <strong>embedded firmware</strong>,
+        <strong>computer vision</strong>, and <strong>wireless communication</strong> to help spaces
+        run only when people are actually in them. My focus is building reliable, production-ready
+        connected products end to end, from embedded hardware to cloud dashboards.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Explore Projects &rarr;</a>
+        <a href="#contact" class="btn-secondary">Let's Connect</a>
+        <div class="hero-social">
+          <!-- EDIT ME: replace with your real links -->
+          <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56C20.71 21.38 24 17.07 24 12c0-6.27-5.23-11.5-12-11.5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mariya-nenot-1802sha/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45Z"/></svg>
+          </a>
+          <a href="mailto:mariyanenot1802@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.3 5.84a.8.8 0 0 0 1 0L19.8 6H4.2ZM20 7.7l-6.98 5.58a2.3 2.3 0 0 1-2.87 0L3.17 7.7v10.8H20V7.7Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">Embedded Systems</span>
+          <span class="stat-label">ESP32 &middot; Firmware &middot; C / C++</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Computer Vision</span>
+          <span class="stat-label">YOLO &middot; MobileNet SSD &middot; Real-Time Inference</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num accent">Cloud &amp; Connectivity</span>
+          <span class="stat-label">AWS &middot; MQTT &middot; Industrial Protocols</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tools-strip">
+    <p class="tools-strip-label">TOOLS &amp; DOMAINS I WORK WITH</p>
+    <div class="tools-strip-list">
+      <span>ESP32</span>
+      <span>ESP-IDF</span>
+      <span>STM32</span>
+      <span>Silicon Labs</span>
+      <span>Arduino</span>
+      <span>PlatformIO</span>
+      <span>Embedded C / C++</span>
+      <span>Computer Vision</span>
+      <span>YOLO</span>
+      <span>MobileNet SSD</span>
+      <span>MQTT</span>
+      <span>BLE</span>
+      <span>AWS</span>
+      <span>Industrial Protocols</span>
+      <span>Python</span>
+      <span>Full-Stack Development</span>
+      <span>Web Development</span>
+      <span>Mobile App Development</span>
+      <span>Flutter</span>
+      <span>Git</span>
+      <span>Linux</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2 class="section-title">My Story</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p class="section-subtitle">Learning fast, building faster</p>
+      <p>
+        I started as a Data Analyst intern at HCLTech while finishing my Bachelor's in Information
+        Technology with Data Science, learning to find the story hidden in messy data. That
+        curiosity took me to <strong>Cyber Virtuous</strong> just a few months later as a Computer
+        Vision Developer, a completely different discipline that I had to pick up fast, training
+        object-detection models and building real-time inference pipelines with YOLO and MobileNet
+        SSD.
+      </p>
+      <p>
+        As the company grew into <strong>Auvetra Labs</strong>, I co-founded it alongside people
+        who believed in the same mission, making buildings smarter and more energy efficient
+        through presence-sensing. Radar, computer vision and BLE all detect when a room is
+        actually occupied. We've since earned DPIIT recognition, grants from MeitY Startup Hub and
+        EDII-TN, and a place in the NVIDIA Inception Program.
+      </p>
+      <p>
+        Radar-based presence detection runs on embedded hardware, so as we built that line out, I
+        moved from computer vision into embedded systems and firmware development, another new
+        domain that I learned on the job in months rather than years. Today, as our Embedded and
+        IoT Systems Engineer, I build the automation and edge-AI layer that ties it all together,
+        including ESP32 firmware, AWS and MQTT, and industrial protocols for connecting to building systems.
+      </p>
+      <p>
+        Every step has meant walking into a domain I didn't know yet and getting comfortable in it
+        fast, first data, then vision, then embedded systems. The goal has stayed the same, turning
+        real-world signal into something reliable that quietly helps people, without them ever
+        having to think about it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section projects-pin">
+ <div class="projects-sticky">
+  <div class="projects-header">
+    <span class="projects-eyebrow">My Work</span>
+    <h2 class="projects-heading">Turning ideas into products</h2>
+  </div>
+
+  <div class="projects-carousel">
+    <div class="projects-track">
+
+      <!-- EDIT ME: replace with your real projects -->
+      <article class="project-slide">
+        <span class="project-index">01</span>
+        <div class="project-slide-body">
+          <h3>Smart Home Automation Hub</h3>
+          <p class="project-subtitle">Centralized control for lighting, climate, and security</p>
+          <p class="project-desc">A Raspberry Pi based hub that controls lighting, temperature, and security sensors via MQTT, with a web dashboard for real-time monitoring.</p>
+          <div class="tags">
+            <span>Raspberry Pi</span>
+            <span>MQTT</span>
+            <span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-slide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11.5 12 4l9 7.5"></path>
+            <path d="M5 10v10h14V10"></path>
+            <path d="M9 20v-6h6v6"></path>
+          </svg>
+        </div>
+      </article>
+
+      <article class="project-slide">
+        <span class="project-index">02</span>
+        <div class="project-slide-body">
+          <h3>Environmental Monitoring System</h3>
+          <p class="project-subtitle">Real-time air quality and climate tracking</p>
+          <p class="project-desc">An Arduino-based sensor network that tracks temperature, humidity, and air quality, streaming data to the cloud for visualization and alerts.</p>
+          <div class="tags">
+            <span>Arduino</span>
+            <span>C++</span>
+            <span>Cloud</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-slide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 4a2 2 0 0 0-4 0v10.54a4 4 0 1 0 4 0Z"></path>
+            <line x1="12" y1="8" x2="12" y2="14"></line>
+          </svg>
+        </div>
+      </article>
+
+      <article class="project-slide">
+        <span class="project-index">03</span>
+        <div class="project-slide-body">
+          <h3>Wearable Health Tracker</h3>
+          <p class="project-subtitle">Low-power vitals monitoring on the wrist</p>
+          <p class="project-desc">A low-power wearable prototype that captures heart rate and motion data, syncing to a companion app over Bluetooth Low Energy.</p>
+          <div class="tags">
+            <span>BLE</span>
+            <span>Embedded C</span>
+            <span>Sensors</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-slide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.8 4.9a5.4 5.4 0 0 0-7.6 0L12 6.1l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.3 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"></path>
+            <polyline points="6 12 8.5 12 10 9 13 15 14.5 12 18 12"></polyline>
+          </svg>
+        </div>
+      </article>
+
+      <article class="project-slide">
+        <span class="project-index">04</span>
+        <div class="project-slide-body">
+          <h3>Real-Time Occupancy Detection</h3>
+          <p class="project-subtitle">Computer vision based people-counting for smart spaces</p>
+          <p class="project-desc">A YOLO-based vision pipeline that detects and counts people in a room in real time, feeding occupancy data into an automation dashboard.</p>
+          <div class="tags">
+            <span>Computer Vision</span>
+            <span>YOLO</span>
+            <span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-slide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="projects-nav">
+    <div class="projects-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+    </div>
+    <div class="projects-arrows">
+      <button class="arrow-btn" id="projects-prev" aria-label="Previous project">&#10094;</button>
+      <button class="arrow-btn" id="projects-next" aria-label="Next project">&#10095;</button>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section id="experience" class="section">
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-header">
+          <h3>Embedded &amp; IoT Systems Engineer</h3>
+          <span class="timeline-date">Oct 2025 &ndash; Present</span>
+        </div>
+        <p class="timeline-org">Auvetra Labs Pvt Ltd &middot; Coimbatore, Tamil Nadu &middot; On-site</p>
+        <p>Developing embedded and IoT systems focused on automation, edge AI, real-time device communication, and cloud-connected infrastructure using ESP32, AWS, MQTT, industrial protocols, and computer vision technologies.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-header">
+          <h3>Computer Vision Developer</h3>
+          <span class="timeline-date">Apr 2025 &ndash; Oct 2025</span>
+        </div>
+        <p class="timeline-org">Auvetra Labs Pvt Ltd (formerly Cyber Virtuous) &middot; Coimbatore, Tamil Nadu &middot; On-site</p>
+        <p>Stayed on through the company's transition from Cyber Virtuous to Auvetra Labs Private Limited, building computer vision models and pipelines that fed into the team's IoT and automation products.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-header">
+          <h3>Computer Vision Intern</h3>
+          <span class="timeline-date">Mar 2025 &ndash; Apr 2025</span>
+        </div>
+        <p class="timeline-org">Cyber Virtuous &middot; Coimbatore, Tamil Nadu &middot; On-site</p>
+        <p>Trained custom object-detection datasets and built real-time inference pipelines using YOLO and MobileNet SSD.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-header">
+          <h3>Data Analyst Intern</h3>
+          <span class="timeline-date">Dec 2024 &ndash; Feb 2025</span>
+        </div>
+        <p class="timeline-org">HCLTech &middot; Madurai, Tamil Nadu &middot; Remote</p>
+        <p>Worked on data wrangling and model development, building the analytical foundation that carried into later computer vision and embedded systems work.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="education-block">
+    <h3 class="education-title">Education</h3>
+    <div class="education-item">
+      <div class="timeline-header">
+        <h3>Bachelor's Degree, Information Technology with Data Science</h3>
+        <span class="timeline-date">Aug 2022 &ndash; May 2025</span>
+      </div>
+      <p class="timeline-org">Rathinam Global University &middot; Grade: 8.1</p>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="section">
+  <h2 class="section-title">Engineering Process</h2>
+  <p class="process-subtitle">A structured approach to designing reliable, scalable, and production-ready IoT systems.</p>
+  <div class="process-grid">
+    <div class="process-item">
+      <span class="process-number">01</span>
+      <h3>Analyze</h3>
+      <p class="process-tagline">Understand the Problem</p>
+      <p>Every project starts by understanding the requirements, constraints, and the real problem to solve. I focus on defining clear objectives before selecting technologies or designing the solution.</p>
+    </div>
+    <div class="process-item">
+      <span class="process-number">02</span>
+      <h3>Design</h3>
+      <p class="process-tagline">Build the System Architecture</p>
+      <p>I design the complete system, from hardware and firmware to communication protocols, cloud infrastructure, and data flow, ensuring the solution is scalable, reliable, and maintainable.</p>
+    </div>
+    <div class="process-item">
+      <span class="process-number">03</span>
+      <h3>Develop</h3>
+      <p class="process-tagline">Implement &amp; Integrate</p>
+      <p>I build and integrate every component of the system, including embedded firmware, sensors, connectivity, cloud services, and user interfaces into a seamless solution.</p>
+    </div>
+    <div class="process-item">
+      <span class="process-number">04</span>
+      <h3>Validate</h3>
+      <p class="process-tagline">Test, Optimize &amp; Deploy</p>
+      <p>I validate the system under real-world conditions, optimize performance and reliability, and prepare the solution for production deployment.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h3>Hardware & Platforms</h3>
+      <ul class="skill-list">
+        <li>ESP32 / ESP8266</li>
+        <li>STM32</li>
+        <li>Silicon Labs</li>
+        <li>Arduino</li>
+        <li>Sensors & Actuators</li>
+        <li>Radar Modules</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Computer Vision</h3>
+      <ul class="skill-list">
+        <li>YOLO</li>
+        <li>MobileNet SSD</li>
+        <li>Real-Time Inference</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Protocols & Cloud</h3>
+      <ul class="skill-list">
+        <li>MQTT</li>
+        <li>BLE</li>
+        <li>AWS</li>
+        <li>Industrial Protocols</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Languages & Tools</h3>
+      <ul class="skill-list">
+        <li>C / C++</li>
+        <li>Python</li>
+        <li>ESP-IDF</li>
+        <li>PlatformIO</li>
+        <li>Git & GitHub</li>
+        <li>Linux</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Web &amp; App Development</h3>
+      <ul class="skill-list">
+        <li>Full-Stack Development</li>
+        <li>Web Development</li>
+        <li>Mobile App Development</li>
+        <li>Flutter</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section alt-bg">
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-content">
+    <div class="contact-info">
+      <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+      <ul class="contact-links">
+        <!-- EDIT ME: replace with your real email and links -->
+        <li><a href="mailto:mariyanenot1802@gmail.com">mariyanenot1802@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/mariya-nenot-1802sha/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+      <p class="form-note" id="form-note"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Mariya Nenot R. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
